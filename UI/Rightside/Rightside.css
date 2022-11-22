@@ -1,0 +1,195 @@
+.right-side-container {
+  margin: 100px 30px;
+  width: 70%;
+}
+.right-side-to-do-list-text {
+  font-size: 50px;
+}
+.right-side-to-do-list-text-box {
+  margin: auto;
+  overflow-x: hidden;
+}
+.right-side-to-do-list-text {
+  font-weight: bold;
+  color: rgb(28, 78, 185);
+  animation-name: rightToLeft;
+  animation-duration: 4.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+@keyframes rightToLeft {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.right-side-new-task-input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+.right-side-input-add-container {
+  display: flex;
+  margin: 40px 50px 80px 50px;
+}
+.right-side-add-button {
+  font-size: 18px;
+  margin-left: 20px;
+  width: 10%;
+  border: none;
+  background-color: #00c6f2;
+  border-radius: 10px;
+}
+.right-side-add-button:hover {
+  background-color: #65f378;
+}
+.right-side-to-do-container {
+  margin: 10px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+}
+.right-side-to-do-list-box {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  scroll-behavior: auto;
+}
+.right-side-text-item {
+  display: block;
+  font-size: 16px;
+  padding: 0px 5px;
+  line-break: auto;
+  width: 90%;
+  height: auto;
+  border: none;
+  text-decoration: none;
+  word-break: break-all; /*  */
+  word-wrap: break-word; /* if you want to cut the complete word */
+  white-space: normal; /* be sure its not 'nowrap'! ! ! :/ */
+  outline: none;
+}
+.right-side-delete-to-do-button {
+  border: none;
+  background-color: transparent;
+  width: 5%;
+}
+.right-side-delete-to-do-button:hover {
+  scale: 1.3;
+}
+.right-side-to-do-done {
+  background-color: transparent;
+  border: none;
+  width: 5%;
+  border-radius: 5px;
+  margin: 0px 10px;
+}
+.right-side-to-do-done:hover {
+  scale: 1.2;
+}
+.active-class {
+  border: 1px solid green;
+  background-color: transparent;
+  color: green;
+  width: 5%;
+  border-radius: 10px;
+  margin: 0px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+.edit-icon {
+  width: 15px;
+  height: 20px;
+  margin: 0px 10px;
+}
+.right-side-edit-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.edit-display {
+  display: none;
+}
+.right-side-add-time {
+  align-self: flex-end;
+  margin: 0px 100px 0px 0px;
+  padding: 6px;
+  background-color: #00c6f2;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: white;
+  opacity: 0.6;
+}
+@media only screen and (max-width: 1024px) {
+  .right-side-container {
+    width: 80%;
+  }
+  .right-side-to-do-list-text {
+    margin: 0px 7%;
+  }
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(-400px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .right-side-input-add-container {
+    flex-direction: column;
+    margin: 40px 50px 80px 50px;
+  }
+  .right-side-add-button {
+    margin: 10px 0px;
+    padding: 5px;
+    margin-left: 0px;
+    width: 100%;
+    color: white;
+    border-radius: 5px;
+  }
+  .right-side-add-time {
+    font-size: 10px;
+    margin: 0px 10px 0px 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .right-side-container {
+    width: 100%;
+    margin: 40px;
+  }
+
+  .right-side-add-time {
+    font-size: 10%;
+  }
+  .right-side-to-do-list-text {
+    font-size: 24px;
+    margin: 0px 50px;
+  }
+  @keyframes rightToLeft {
+    0% {
+      transform: translateX(-200px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  .right-side-input-add-container {
+    margin: 40px 20px 80px 20px;
+  }
+  .right-side-to-do-container {
+    margin: 10px 20px 0px 20px;
+  }
+}

@@ -1,0 +1,51 @@
+.to-do-list-date-logo-container {
+  width: 40%;
+  height: 100vh;
+  border-right: 4px solid white;
+  display: flex;
+  justify-content: center;
+}
+.to-do-list-date-logo-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.to-do-list-date {
+  color: black;
+  font-size: 24px;
+  font-family: cursive;
+}
+.to-do-list-logo-image {
+  width: 200px;
+  height: 200px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .to-do-list-date-logo-container {
+    border-right: none;
+  }
+  .to-do-list-date-logo-container {
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+  }
+  .to-do-list-date-logo-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .to-do-list-logo-image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .to-do-list-date-logo-box {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .to-do-list-date {
+    font-size: 18px;
+  }
+}

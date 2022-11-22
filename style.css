@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #c4f3ca;
+}
+.to-do-list-container {
+  margin: 20px 0px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+@media only screen and (max-width: 1024px) {
+  .to-do-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+}
